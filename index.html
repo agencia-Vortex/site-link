@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centro de links</title>
+    
+    <style>
+        /* 1. ESTILOS BASE E RESPONSIVIDADE */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho total */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0077b5;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 2. ESTILO DO BOTÃO COM IMAGEM */
+        .link-button {
+            display: flex; /* Para alinhar imagem e texto */
+            align-items: center; /* Alinha verticalmente no meio */
+            padding: 10px 20px; /* Reduzi um pouco o padding para compensar o tamanho da imagem */
+            background-color: #0077b5; 
+            color: white;
+            text-decoration: none;
+            border-radius: 76px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+            text-align: left; 
+        }
+
+        .link-button:hover {
+            background-color: #005f91; 
+            transform: translateY(-2px);
+        }
+
+        /* 3. ESTILO DA IMAGEM CIRCULAR */
+        .link-button img {
+            width: 75px; /* Largura da imagem */
+            height: 75px; /* Altura da imagem */
+            border-radius: 50%; /* Torna a imagem circular */
+            object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+            margin-right: 15px; /* Espaço entre a imagem e o texto */
+            border: 2px solid white; /* Borda branca para destacar */
+            flex-shrink: 0; /* Impede que a imagem encolha em telas pequenas */
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.4em;
+            }
+            .link-button {
+                padding: 8px 15px;
+                font-size: 1em;
+            }
+            .link-button img {
+                width: 40px; /* Imagem um pouco menor em celular */
+                height: 40px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>LinkedIn da Equipe da Vórtex </h1>
+        <p>BEM VINDO!!!<br>Aproveitem, aqui contem o LinkedIn de cada pessoa da equipe da nossa empresa.</p>
+
+        <div class="link-list">
+            
+            <a href="https://www.linkedin.com/in/juan-carlos-5560ba371/" target="_blank" class="link-button">
+                <img src="imagens para o site/juan.jpg" alt="Foto de Perfil 1"> 
+                Juan Carlos - Administrador Geral
+            </a>
+            
+            <a href="https://www.linkedin.com/in/vit%C3%B3ria-aparecida-8066a8368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/vih.jpg" alt="Foto de Perfil 2"> 
+             Vitória Aparecida - Administradora Geral
+            </a>
+            <a href="https://www.linkedin.com/in/eduardo-augusto-3a061336b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/augusto.jpg" alt="Foto de Perfil 7"> 
+                 Eduardo Augusto - lider de Estoque
+            </a>
+            <a href="https://www.linkedin.com/in/anderson-damasceno-dos-santos-207819371?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/anderson.jpg" alt="Foto de Perfil 4"> 
+                Anderson Damasceno - Estoque
+            </a>
+             <a href="https://www.linkedin.com/in/maria-clara-da-silva-118699368?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/maria.jpg" alt="Foto de Perfil 12"> 
+                 Maria Clara - Estoque
+            </a>
+            <a href="URL_DO_LINK_6" target="_blank" class="link-button">
+                <img src="imagens para o site/davi.jpg" alt="Foto de Perfil 6"> 
+                 Davi Jesus - Estoque
+            </a>
+            <a href="https://www.linkedin.com/in/maria-eduarda-martins-santos-897445322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/dudinha.jpg" alt="Foto de Perfil 13"> 
+                 Maria Eduarda Martins - Lider de Compras
+            </a>
+
+            <a href="https://www.linkedin.com/in/ana-carolina-r-a58100371?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/ana.jpg" alt="Foto de Perfil 3"> 
+                 Ana Carolina - Compras 
+            </a>
+            
+            
+            <a href="https://www.linkedin.com/in/pedro-henrique-731939372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="link-button">
+                <img src="imagens para o site/pedro.jpg" alt="Foto de Perfil 18"> 
+                18. Pedro Henrique - Compras
+            </a>
+             <a href="https://www.linkedin.com/in/nat%C3%A1lia-da-costa-santos-893a4531b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/nati.jpg" alt="Foto de Perfil 17"> 
+                 Natalia da costa - Lider de Faturamento/Vendas
+            </a>
+              <a href="https://www.linkedin.com/in/gabriel-felipe-de-souza-60b751372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/gabriel.jpg" alt="Foto de Perfil 8"> 
+                 Gabriel Felipe - Faturamento/Vendas
+            </a>
+             <a href="https://www.linkedin.com/in/let%C3%ADcia-lysie-11a849347?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/bilu.jpg" alt="Foto de Perfil 11"> 
+                 Leticia Lysie - Faturamento/Vendas
+            </a>
+             <a href="https://www.linkedin.com/in/maryella-silva-santos-62b665316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/mar.jpg" alt="Foto de Perfil 15"> 
+                 Maryella Silva - Faturamento/Vendas
+            </a>
+            
+            <a href="https://www.linkedin.com/in/eduarda-alencar-256a18367?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="link-button">
+                <img src="imagens para o site/alencar.jpg" alt="Foto de Perfil 14"> 
+                 Maria Erduada Quirino - Lider de Marketing
+            </a>
+            <a href="https://www.linkedin.com/in/beatriz-siqueira-r-b65255282?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/bea.jpg" alt="Foto de Perfil 5"> 
+                 Beatriz siqueira - Marketing
+            </a>
+            
+            <a href="https://www.linkedin.com/in/gabriella-fagundes-esteves-423193368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/gabi.jpg" alt="Foto de Perfil 9"> 
+                 Gabriella Fagundes - Marketing
+            </a>
+
+            <a href="https://www.linkedin.com/in/keven-galdino-aa379833a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/keven.jpg" alt="Foto de Perfil 10"> 
+                 Keven Galdino - Marketing 
+            </a>
+            <a href="https://www.linkedin.com/in/sara-bruno-leme-de-farias-589241368?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/sarah.jpg" alt="Foto de Perfil 20"> 
+                 Sara Bruno - Lider do financeiro
+            </a>
+           
+            <a href="https://www.linkedin.com/in/miguel-martins-5025a4349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link-button">
+                <img src="imagens para o site/miguel.jpg" alt="Foto de Perfil 16"> 
+                 Miguel Martins - Financeiro 
+            </a>
+
+            <a href="https://www.linkedin.com/in/ryan-de-jesus-34a013373?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-button">
+                <img src="imagens para o site/ryan.jpg" alt="Foto de Perfil 19"> 
+                 Ryan de Jesus - Financeiro
+            </a>
+
+            
+            
+        </div>
+    </div>
+
+</body>
+</html>
